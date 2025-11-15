@@ -38,7 +38,7 @@ export default function MovieRow({ categoryTitle, movies }: MovieRowProps) {
                     ? `https://image.tmdb.org/t/p/w342${movie.poster_path}`
                     : "/no-poster.jpg"
                 }
-                alt={movie.title}
+                alt={movie.title || movie.name || "Movie"}
                 fill
                 className="object-cover"
               />
